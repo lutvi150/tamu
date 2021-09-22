@@ -82,6 +82,8 @@ $tahun=date("Y");
 
   <!-- Optional SmartWizard theme -->
   <link href="css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css" />
+  
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -258,7 +260,7 @@ $tahun=date("Y");
   <!-- AdminLTE for demo purposes -->
   <script src="dist/js/demo.js"></script>
   <!-- ChartJS -->
-  <script src="bower_components/chart.js/Chart.js"></script>
+  <!-- <script src="bower_components/chart.js/Chart.js"></script> -->
   <!-- Select2 -->
   <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
   <!-- InputMask -->
@@ -270,12 +272,7 @@ $tahun=date("Y");
   <!-- DataTables -->
   <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-
   <script type="text/javascript" src="js/vpb_uploader.js"></script>
-
-
-
-
   <script type="text/javascript" src="js/webcam.js"></script>
   <script type="text/javascript" src="js/webcam.min.js"></script>
   <script>
