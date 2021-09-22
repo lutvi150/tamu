@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 05 Jul 2021 pada 04.41
--- Versi server: 10.4.17-MariaDB
--- Versi PHP: 7.3.26
+-- Waktu pembuatan: 22 Sep 2021 pada 05.02
+-- Versi server: 10.4.20-MariaDB
+-- Versi PHP: 7.3.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -1496,7 +1496,108 @@ INSERT INTO `log_activity` (`nolog`, `kode_user`, `activity`, `ip`, `tanggal`) V
 (1449, 4, 'user Melakukan Login', '::1', '2021-06-30 15:16:08'),
 (1450, 4, 'user Melakukan Login', '192.168.172.66', '2021-06-30 15:18:16'),
 (1451, 4, 'user Melakukan Login', '127.0.0.1', '2021-07-01 15:53:54'),
-(1452, 4, 'user Melakukan Login', '127.0.0.1', '2021-07-05 09:18:17');
+(1452, 4, 'user Melakukan Login', '127.0.0.1', '2021-07-05 09:18:17'),
+(1453, 4, 'user Melakukan Login', '::1', '2021-07-07 10:01:25'),
+(1454, 4, 'user Melakukan Login', '127.0.0.1', '2021-07-07 10:02:04'),
+(1455, 4, 'user Melakukan Login', '::1', '2021-07-13 08:35:55'),
+(1456, 4, 'user Menerima Tamu RINALDI', '::1', '2021-07-13 08:40:10'),
+(1457, 4, 'user Melakukan Login', '192.168.172.66', '2021-07-13 09:25:45'),
+(1458, 1, 'user Melakukan Login', '127.0.0.1', '2021-07-13 15:29:55'),
+(1459, 4, 'user Menerima Tamu 082285498005', '127.0.0.1', '2021-07-15 11:30:52'),
+(1460, 4, 'user Melakukan checkout tamu RINALDI', '127.0.0.1', '2021-07-15 11:30:59'),
+(1461, 4, 'user Melakukan checkout tamu 082285498005', '127.0.0.1', '2021-07-15 11:31:18'),
+(1462, 4, 'user Melakukan Login', '127.0.0.1', '2021-07-15 11:45:45'),
+(1463, 4, 'user Menerima Tamu 082285498005', '127.0.0.1', '2021-07-15 11:46:40'),
+(1464, 4, 'user Melakukan checkout tamu 082285498005', '127.0.0.1', '2021-07-15 11:46:50'),
+(1465, 4, 'user Menerima Tamu 082285498005', '127.0.0.1', '2021-07-15 11:51:00'),
+(1466, 4, 'user Melakukan checkout tamu 082285498005', '127.0.0.1', '2021-07-15 11:51:20'),
+(1467, 4, 'user Melakukan Login', '127.0.0.1', '2021-07-19 08:56:01'),
+(1468, 4, 'user Menerima Tamu APRIZAL', '127.0.0.1', '2021-07-19 08:58:30'),
+(1469, 4, 'user Melakukan checkout tamu APRIZAL', '127.0.0.1', '2021-07-19 09:49:21'),
+(1470, 4, 'user Menerima Tamu RINALDI', '127.0.0.1', '2021-07-19 09:54:56'),
+(1471, 4, 'user Melakukan checkout tamu RINALDI', '127.0.0.1', '2021-07-19 09:55:10'),
+(1472, 4, 'user Menerima Tamu RINALDI', '127.0.0.1', '2021-07-19 09:55:46'),
+(1473, 4, 'user Melakukan checkout tamu RINALDI', '127.0.0.1', '2021-07-19 10:58:32'),
+(1474, 4, 'user Menerima Tamu VICKY HAREVA', '127.0.0.1', '2021-07-19 12:04:57'),
+(1475, 4, 'user Melakukan checkout tamu VICKY HAREVA', '127.0.0.1', '2021-07-19 13:44:30'),
+(1476, 4, 'user Menerima Tamu CICILIA AGUSTINA', '127.0.0.1', '2021-07-19 13:47:14'),
+(1477, 4, 'user Melakukan checkout tamu CICILIA AGUSTINA', '127.0.0.1', '2021-07-19 14:12:18'),
+(1478, 4, 'user Melakukan Login', '127.0.0.1', '2021-07-27 09:46:56'),
+(1479, 4, 'user Menerima Tamu VICKY HAREVA', '127.0.0.1', '2021-07-27 09:49:41'),
+(1480, 4, 'user Melakukan checkout tamu VICKY HAREVA', '127.0.0.1', '2021-07-27 13:54:17'),
+(1481, 4, 'user Melakukan Login', '127.0.0.1', '2021-08-04 09:39:05'),
+(1482, 4, 'user Menerima Tamu YONI FENTRI', '127.0.0.1', '2021-08-04 10:24:32'),
+(1483, 4, 'user Melakukan checkout tamu YONI FENTRI', '127.0.0.1', '2021-08-04 11:20:51'),
+(1484, 4, 'user Menerima Tamu RINALDI', '127.0.0.1', '2021-08-06 14:08:32'),
+(1485, 4, 'user Melakukan checkout tamu RINALDI', '127.0.0.1', '2021-08-06 15:04:02'),
+(1486, 4, 'user Melakukan Login', '127.0.0.1', '2021-08-10 10:45:35'),
+(1487, 4, 'user Menerima Tamu ROBBY FATRA', '127.0.0.1', '2021-08-10 10:48:10'),
+(1488, 4, 'user Melakukan checkout tamu ROBBY FATRA', '127.0.0.1', '2021-08-10 11:31:02'),
+(1489, 4, 'user Melakukan Login', '127.0.0.1', '2021-08-12 11:40:29'),
+(1490, 4, 'user Menerima Tamu roynald fattelyku', '127.0.0.1', '2021-08-12 11:41:40'),
+(1491, 4, 'user Melakukan Login', '127.0.0.1', '2021-08-19 11:17:19'),
+(1492, 4, 'user Menerima Tamu PRAMDHANI AZWAR', '127.0.0.1', '2021-08-19 11:19:54'),
+(1493, 4, 'user Melakukan checkout tamu roynald fattelyku', '127.0.0.1', '2021-08-19 12:29:58'),
+(1494, 4, 'user Melakukan checkout tamu PRAMDHANI AZWAR', '127.0.0.1', '2021-08-19 12:30:06'),
+(1495, 4, 'user Melakukan Login', '127.0.0.1', '2021-08-25 10:00:30'),
+(1496, 4, 'user Menerima Tamu RINALDI', '127.0.0.1', '2021-08-25 10:01:18'),
+(1497, 4, 'user Melakukan checkout tamu RINALDI', '127.0.0.1', '2021-08-25 17:09:46'),
+(1498, 4, 'user Melakukan Login', '127.0.0.1', '2021-08-27 10:15:28'),
+(1499, 4, 'user Menerima Tamu Defi Asmar', '127.0.0.1', '2021-08-27 10:16:30'),
+(1500, 4, 'user Melakukan checkout tamu Defi Asmar', '127.0.0.1', '2021-08-27 10:50:10'),
+(1501, 4, 'user Menerima Tamu Rifaldi', '127.0.0.1', '2021-08-27 14:13:32'),
+(1502, 4, 'user Menerima Tamu NENNI', '127.0.0.1', '2021-08-27 14:34:20'),
+(1503, 4, 'user Menerima Tamu ANJONI VILMON', '127.0.0.1', '2021-08-27 14:36:43'),
+(1504, 4, 'user Melakukan checkout tamu Rifaldi', '127.0.0.1', '2021-08-27 15:45:49'),
+(1505, 4, 'user Melakukan checkout tamu NENNI', '127.0.0.1', '2021-08-27 15:46:09'),
+(1506, 4, 'user Melakukan checkout tamu ANJONI VILMON', '127.0.0.1', '2021-08-27 16:22:40'),
+(1507, 4, 'user Melakukan Login', '127.0.0.1', '2021-08-31 09:03:40'),
+(1508, 4, 'user Melakukan Login', '192.168.172.66', '2021-08-31 09:07:41'),
+(1509, 4, 'user Menerima Tamu romi husda', '127.0.0.1', '2021-08-31 10:09:31'),
+(1510, 4, 'user Melakukan checkout tamu romi husda', '127.0.0.1', '2021-08-31 10:44:52'),
+(1511, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-01 08:24:47'),
+(1512, 4, 'user Melakukan Login', '192.168.172.66', '2021-09-01 08:26:25'),
+(1513, 4, 'user Melakukan Login', '192.168.172.66', '2021-09-01 14:10:53'),
+(1514, 4, 'user Menerima Tamu AZIZKHAN', '127.0.0.1', '2021-09-02 09:52:04'),
+(1515, 4, 'user Melakukan Login', '192.168.172.66', '2021-09-02 09:54:53'),
+(1516, 4, 'user Melakukan checkout tamu AZIZKHAN', '127.0.0.1', '2021-09-02 10:38:59'),
+(1517, 4, 'user Menerima Tamu AZHARDI', '127.0.0.1', '2021-09-02 10:46:22'),
+(1518, 4, 'user Menerima Tamu ALMAHALI', '127.0.0.1', '2021-09-02 11:26:43'),
+(1519, 4, 'user Menerima Tamu hendri i', '127.0.0.1', '2021-09-02 11:30:04'),
+(1520, 4, 'user Melakukan checkout tamu AZHARDI', '127.0.0.1', '2021-09-02 12:09:09'),
+(1521, 4, 'user Melakukan checkout tamu ALMAHALI', '127.0.0.1', '2021-09-02 12:09:21'),
+(1522, 4, 'user Melakukan checkout tamu hendri i', '127.0.0.1', '2021-09-02 12:09:28'),
+(1523, 4, 'user Menerima Tamu YURNAFIS', '127.0.0.1', '2021-09-02 13:48:03'),
+(1524, 4, 'user Melakukan checkout tamu YURNAFIS', '127.0.0.1', '2021-09-02 14:21:06'),
+(1525, 4, 'user Menerima Tamu harianto', '127.0.0.1', '2021-09-02 14:22:40'),
+(1526, 4, 'user Melakukan checkout tamu harianto', '127.0.0.1', '2021-09-02 16:04:48'),
+(1527, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-06 14:05:14'),
+(1528, 4, 'user Menerima Tamu DASTATI', '127.0.0.1', '2021-09-06 14:09:20'),
+(1529, 4, 'user Melakukan checkout tamu DASTATI', '127.0.0.1', '2021-09-06 14:41:30'),
+(1530, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-07 10:02:09'),
+(1531, 4, 'user Menerima Tamu muslim', '127.0.0.1', '2021-09-07 10:05:28'),
+(1532, 4, 'user Melakukan checkout tamu muslim', '127.0.0.1', '2021-09-07 10:24:55'),
+(1533, 4, 'user Menerima Tamu DIGO PERDANA PUTRA', '127.0.0.1', '2021-09-07 14:04:12'),
+(1534, 4, 'user Melakukan checkout tamu DIGO PERDANA PUTRA', '127.0.0.1', '2021-09-07 16:11:04'),
+(1535, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-08 09:09:16'),
+(1536, 4, 'user Menerima Tamu INDRA GUNAWAN', '127.0.0.1', '2021-09-08 09:11:29'),
+(1537, 4, 'user Melakukan checkout tamu INDRA GUNAWAN', '127.0.0.1', '2021-09-08 14:25:32'),
+(1538, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-09 10:13:37'),
+(1539, 4, 'user Menerima Tamu welly sunyoto', '127.0.0.1', '2021-09-09 10:17:07'),
+(1540, 4, 'user Melakukan checkout tamu welly sunyoto', '127.0.0.1', '2021-09-09 14:23:39'),
+(1541, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-11 10:46:32'),
+(1542, 4, 'user Melakukan Login', '192.168.172.95', '2021-09-13 11:26:26'),
+(1543, 4, 'user Melakukan Login', '192.168.172.95', '2021-09-13 11:26:27'),
+(1544, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-13 11:33:44'),
+(1545, 4, 'user Menerima Tamu AZIZKHAN', '127.0.0.1', '2021-09-13 11:57:26'),
+(1546, 4, 'user Melakukan checkout tamu AZIZKHAN', '127.0.0.1', '2021-09-13 18:51:39'),
+(1547, 4, 'user Melakukan checkout tamu AZIZKHAN', '127.0.0.1', '2021-09-13 18:52:14'),
+(1548, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-14 11:11:26'),
+(1549, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-15 15:48:32'),
+(1550, 4, 'user Melakukan Login', '192.168.172.66', '2021-09-15 15:49:05'),
+(1551, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-16 09:57:18'),
+(1552, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-21 14:56:19'),
+(1553, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-21 15:02:50');
 
 -- --------------------------------------------------------
 
@@ -1981,7 +2082,40 @@ INSERT INTO `log_tamu` (`no_log`, `uid`, `id_tenant`, `tujuan`, `no_kartu`, `che
 (682, '2991099396', 11, 'unser name dan faswoord perusahaan', '', '2021-06-21 11:25:27', '2021-06-21 12:29:17', '2021-06-21 11:25:27', 4, '1624249527.jpg'),
 (683, '2048544004', 12, 'pembuktian kualifikasi', '', '2021-06-23 11:50:05', '2021-06-23 13:47:37', '2021-06-23 11:50:05', 4, '1624423804.jpg'),
 (684, '3528929796', 12, 'pembuaktian kualifikasi', '', '2021-06-23 12:22:32', '2021-06-23 13:48:07', '2021-06-23 12:22:32', 4, '1624425752.jpg'),
-(685, '1329956357', 12, 'pembuktian kualifikasi', '', '2021-06-23 12:44:40', '2021-06-24 16:02:40', '2021-06-23 12:44:40', 4, '1624427080.jpg');
+(685, '1329956357', 12, 'pembuktian kualifikasi', '', '2021-06-23 12:44:40', '2021-06-24 16:02:40', '2021-06-23 12:44:40', 4, '1624427080.jpg'),
+(686, '1378431236', 5, 'PEMBUKTIAN KUALIFIKASI', '', '2021-07-13 08:40:10', '2021-07-15 11:30:59', '2021-07-13 08:40:10', 4, '1626140409.jpg'),
+(687, '082285498005', 3, '082285498005', '', '2021-07-15 11:30:52', '2021-07-15 11:31:18', '2021-07-15 11:30:52', 4, '1626323452.jpg'),
+(688, '082285498005082285498005', 2, '082285498005', '', '2021-07-15 11:46:40', '2021-07-15 11:46:50', '2021-07-15 11:46:40', 4, '1626324400.jpg'),
+(689, '082285498005', 1, '082285498005', '', '2021-07-15 11:51:00', '2021-07-15 11:51:20', '2021-07-15 11:51:00', 4, '1626324660.jpg'),
+(690, '1500351749', 12, 'pembuktian klafikasi', '', '2021-07-19 08:58:30', '2021-07-19 09:49:21', '2021-07-19 08:58:30', 4, '1626659910.jpg'),
+(691, '1378431236', 12, 'pembuktian klafikasi', '', '2021-07-19 09:54:56', '2021-07-19 09:55:10', '2021-07-19 09:54:56', 4, '1626663296.jpg'),
+(692, '1378431236', 12, 'pembuktian klafikasi', '', '2021-07-19 09:55:46', '2021-07-19 10:58:32', '2021-07-19 09:55:46', 4, '1626663346.jpg'),
+(693, '1304081512810004', 1, 'pembuktian klafikasi', '', '2021-07-19 12:04:57', '2021-07-19 13:44:30', '2021-07-19 12:04:57', 4, '1626671097.jpg'),
+(694, '3797305348', 12, 'pembuktian klafikasi', '', '2021-07-19 13:47:14', '2021-07-19 14:12:18', '2021-07-19 13:47:14', 4, '1626677234.jpg'),
+(695, '130408151281004', 12, 'Pembuktian klarifikasi', '', '2021-07-27 09:49:41', '2021-07-27 13:54:17', '2021-07-27 09:49:41', 4, '1627354181.jpg'),
+(696, '2727565828', 12, 'Pembuktian klarifikasi', '', '2021-08-04 10:24:32', '2021-08-04 11:20:51', '2021-08-04 10:24:32', 4, '1628047472.jpg'),
+(697, '1378431236', 12, 'pembuktian klafikasi', '', '2021-08-06 14:08:32', '2021-08-06 15:04:02', '2021-08-06 14:08:32', 4, '1628233712.jpg'),
+(698, '1374020712770001', 12, 'KLARIFIKASI', '', '2021-08-10 10:48:10', '2021-08-10 11:31:02', '2021-08-10 10:48:10', 4, '1628567290.jpg'),
+(699, '2590347268', 12, 'kualifikasi', '', '2021-08-12 11:41:40', '2021-08-19 12:29:58', '2021-08-12 11:41:40', 4, '1628743300.jpg'),
+(700, '1381973252', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-08-19 11:19:54', '2021-08-19 12:30:06', '2021-08-19 11:19:54', 4, '1629346794.jpg'),
+(701, '1378431236', 12, 'pembuktian klafikasi', '', '2021-08-25 10:01:18', '2021-08-25 17:09:46', '2021-08-25 10:01:18', 4, '1629860478.jpg'),
+(702, '3256974340', 12, 'Pembuktian klarifikasi', '', '2021-08-27 10:16:30', '2021-08-27 10:50:10', '2021-08-27 10:16:30', 4, '1630034190.jpg'),
+(703, '1069844997', 5, 'PEMBUKTIAN KUALIFIKASI', '', '2021-08-27 14:13:32', '2021-08-27 15:45:49', '2021-08-27 14:13:32', 4, '1630048412.jpg'),
+(704, '3593043973', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-08-27 14:34:20', '2021-08-27 15:46:09', '2021-08-27 14:34:20', 4, '1630049660.jpg'),
+(705, '1371110206740001', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-08-27 14:36:43', '2021-08-27 16:22:40', '2021-08-27 14:36:43', 4, '1630049803.jpg'),
+(706, '1077184773', 12, 'pembuktian klafikasi', '', '2021-08-31 10:09:31', '2021-08-31 10:44:52', '2021-08-31 10:09:31', 4, '1630379371.jpg'),
+(707, '1248491780', 12, 'klarifikasi', '', '2021-09-02 09:52:04', '2021-09-02 10:38:59', '2021-09-02 09:52:04', 4, '1630551124.jpg'),
+(708, '2722850820', 12, 'KLARIFIKASI', '', '2021-09-02 10:46:22', '2021-09-02 12:09:09', '2021-09-02 10:46:22', 4, '1630554382.jpg'),
+(709, '1304111606850001', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-09-02 11:26:43', '2021-09-02 12:09:21', '2021-09-02 11:26:43', 4, '1630556803.jpg'),
+(710, '0441016580', 12, 'PEMBUKTIAN', '', '2021-09-02 11:30:04', '2021-09-02 12:09:28', '2021-09-02 11:30:04', 4, '1630557003.jpg'),
+(711, '1304093105630001', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-09-02 13:48:03', '2021-09-02 14:21:06', '2021-09-02 13:48:03', 4, '1630565283.jpg'),
+(712, '2182836484', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-09-02 14:22:40', '2021-09-02 16:04:48', '2021-09-02 14:22:40', 4, '1630567360.jpg'),
+(713, '0303045010670007', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-09-06 14:09:20', '2021-09-06 14:41:30', '2021-09-06 14:09:20', 4, '1630912160.jpg'),
+(714, '1371060101700037', 12, 'NEGOSIASI', '', '2021-09-07 10:05:28', '2021-09-07 10:24:55', '2021-09-07 10:05:28', 4, '1630983928.jpg'),
+(715, '1304132407010001', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-09-07 14:04:12', '2021-09-07 16:11:04', '2021-09-07 14:04:12', 4, '1630998252.jpg'),
+(716, '1329956357', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-09-08 09:11:29', '2021-09-08 14:25:32', '2021-09-08 09:11:29', 4, '1631067089.jpg'),
+(717, '1371010109680003', 12, 'pembuktian kualifikasi', '', '2021-09-09 10:17:07', '2021-09-09 14:23:39', '2021-09-09 10:17:07', 4, '1631157427.jpg'),
+(718, '1248491780', 12, 'pembuktian klafikasi', '', '2021-09-13 11:57:26', '2021-09-13 18:52:14', '2021-09-13 11:57:26', 4, '1631509046.jpg');
 
 -- --------------------------------------------------------
 
@@ -2130,7 +2264,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (71, '2055891204', 'ABDURRAHMAN HADI', 'KTP', '1304052307790001', 'Batusangkar', 'KANTOR CAMAT PARIANGAN', 'Laki-laki', 4, '2020-02-17 12:40:54', '085263707766'),
 (72, '2049608708', 'YUSNIDAR', 'KTP', '1304045908690001', 'Simpang Kiambang Jorong Kubu Rajo Nagari Lima Kaum Kec. Lima Kaum', 'BPBD', 'Perempuan', 4, '2020-02-17 12:48:40', '085376539968'),
 (73, '0711932420', 'DELFITA', 'KTP', '130403420980003', 'Jorong Patai Nagari Padang Magek Kec. Rambatan', 'BPBD', 'Perempuan', 4, '2020-02-17 12:51:00', '085364534622'),
-(74, '0441016580', 'hendri i', 'KTP', '1304080505810001', 'Jorong Batu Basa Nagari Batu Basa Kec. pariangan', 'CV. SEILEM KARYA', 'Laki-laki', 4, '2021-05-03 10:49:01', '081363551981'),
+(74, '0441016580', 'hendri i', 'KTP', '1304080505810001', 'Jorong Batu Basa Nagari Batu Basa Kec. pariangan', 'CV.AMPIANG KARYA', 'Laki-laki', 4, '2021-09-02 11:30:04', '081363551981'),
 (75, '2724532740', 'FERIAMOND RIZKY', 'KTP', '1372020906810001', 'Jl. Pattimura No.106 kel Tj Paku Kec Tj Harapan Kota Solok', 'CV. AMPIANG KARYA', 'Laki-laki', 4, '2020-02-17 14:33:35', '08127645237'),
 (76, '2320053252', 'agung budi kurniawan', 'KTP', '1502060511790001', 'muara belengo rt 006 rw 002 kec. pamenang kab. merangin propinsi jambi', 'CV AMPIANG KARYA', 'Laki-laki', 4, '2020-02-17 14:36:23', '085375547846'),
 (77, '2452697604', 'HENDRI M', 'KTP', '1304082512800002', 'SUNGAI LEMAN JORONG SUNGAI TARAB', 'CV AMPIANG KARYA', 'Laki-laki', 4, '2020-02-17 14:40:33', '082381135412'),
@@ -2166,7 +2300,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (107, '3800265220', 'INDRA GUNAWAN', 'KTP', '1371111408850014', 'Batusangkar', 'CV. DMJ KONSTRUKSI', 'Laki-laki', 4, '2020-08-26 14:12:09', '081374439313'),
 (108, '1787720964', 'HADEWINANDA SYARDI', 'KTP', '1371092406880001', 'KOMP. MAWAR PUTIH BLOK L NO 23, KURANJI PADANG', 'CV. HD JAYA', 'Laki-laki', 4, '2020-02-26 15:18:25', '081365699847'),
 (109, '0710902276', 'abra murcy ae', 'KTP', '1304052509860003', 'jorong aua serumpun', 'CV. LINTAS RODA BIRU', 'Laki-laki', 4, '2021-05-24 11:14:08', '081378762537'),
-(110, '2727565828', 'YONI FENTRI', 'KTP', '1304052112700001', 'Jorong Sungai Salak Nag. Koto Tangah Kec. Tanjung Emas', 'CV. BATANG BUO', 'Laki-laki', 4, '2020-02-27 11:27:41', '081266643444'),
+(110, '2727565828', 'YONI FENTRI', 'KTP', '1304052112700001', 'Jorong Sungai Salak Nag. Koto Tangah Kec. Tanjung Emas', 'CV. BATANG BUO', 'Laki-laki', 4, '2021-08-04 10:24:32', '081266643444'),
 (111, '2858839044', 'irwan', 'KTP', '1471092610720002', 'pekanbaru', 'cv. duta multi artha', 'Laki-laki', 4, '2020-08-06 14:01:21', '082388955710'),
 (112, '2048225028', 'Ayu Kurnia Suzana', 'KTP', '1376027003830001', 'Koto Panjang Padang Kec. Lamposi Tigo Nagori Kota Payakumbuh', 'cv. duta cipta persada', 'Perempuan', 4, '2020-02-27 14:08:13', '082284772992'),
 (113, '2989384708', 'DELFINDO R', 'KTP', '1471092603730001', 'JL. ADI SUCIPTO II NO 330', 'CV. DUTA CIPTA PERSADA', 'Laki-laki', 4, '2020-02-27 14:10:42', '08127666442'),
@@ -2176,7 +2310,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (117, '0000000000001', 'ERNAWATI,S.SoS', 'KTP', '0000000000001', 'Batusangkar', 'DINAS PERKIM LH', 'Perempuan', 4, '2020-03-02 10:08:15', '081374055160'),
 (118, '2451666436', 'M. FAJAR SETYAWAN', 'KTP', '1304042002000002', 'RAMBATAN ', 'MAHASISWA', 'Laki-laki', 4, '2020-03-02 10:42:29', '081215678871'),
 (119, '3526314500', 'HABIBIE SALAM', 'KTP', '1307062912870001', 'KOMPLEK ARAI PINANG 1 BLOK C NO 3 JORONG KUBU RAJO LIMA KAUM BATU SANGKAR', 'RETYAN', 'Laki-laki', 4, '2020-03-02 15:11:53', '0811668660'),
-(120, '1304111606850001', 'AL MAHALI', 'KTP', '1304111606850001', 'ATAR', 'LENGGAN MUDO', 'Laki-laki', 4, '2020-03-02 15:48:34', '082384445234'),
+(120, '1304111606850001', 'ALMAHALI', 'KTP', '1304111606850001', 'ATAR', 'CV.LENGGANGMUDA', 'Laki-laki', 4, '2021-09-02 11:26:43', '082384445234'),
 (121, '2457894916', 'YULIA ANGGRAINI', 'KTP', '1375014303890001', 'JL. SY. IBRAHIM MUSA BUKITTINGGI', 'PPSDM Kemendagri Regional Bukittinggi', 'Perempuan', 4, '2020-03-03 11:11:30', '085263219903'),
 (122, '1304080210680002', 'ATHOSRA', 'KTP', '1304080210680002', 'Tigabatur - Sungai tarab', 'RSUD', 'Laki-laki', 4, '2020-03-03 11:31:09', '081374892890'),
 (123, '2183222788', 'zulkifli', 'KTP', '13004102106700001', 'jr. data nagari tabek Patah Kec. Salimpaung', 'Kantor Camat Salimpaung', 'Laki-laki', 4, '2020-03-03 11:42:06', '081267833652'),
@@ -2218,7 +2352,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (159, '2859283972', 'SUHEIL RINANDA', 'KTP', '1312042506910001', 'RIMBO BINUANG DESA LINGKUANG AUA KECAMATAN PASAMAN', 'CV. BINA CITRA CONSULTANT', 'Laki-laki', 4, '2020-03-24 10:50:58', '085363073170'),
 (160, '2854831364', 'mutia sari', 'KTP', '1371096106970005', 'Jl. Tunggang No. 35 Padang', 'CV MITRA SAKINAH CONSULTANT', 'Perempuan', 4, '2021-01-27 16:04:26', '085364585338'),
 (161, '2857973508', 'renold sata', 'KTP', '1271032504850003', 'batusangkar', 'dinas PUPR', 'Laki-laki', 4, '2020-03-24 11:32:21', '085263142925'),
-(162, '2182836484', 'harianto', 'KTP', '1304090808730004', 'dsn pulai koto tuo simabur', 'cv temika jaya utama', 'Laki-laki', 4, '2021-04-06 09:56:42', '082292665906'),
+(162, '2182836484', 'harianto', 'KTP', '1304090808730004', 'dsn pulai koto tuo simabur', 'cv temika jaya utama', 'Laki-laki', 4, '2021-09-02 14:22:40', '082286516054'),
 (163, '2860142340', 'eko yuono', 'KTP', '1310012009840001', 'sijunjung', 'cv. ramola', 'Laki-laki', 4, '2020-03-24 13:56:15', '082174407806'),
 (164, '2990573828', 'roy ahmad suradi', 'KTP', '1377013105820001', 'pariaman', 'cv ramolla', 'Laki-laki', 4, '2020-03-24 13:58:06', '082383846545'),
 (165, '3797306116', 'Yomi riko', 'KTP', '1377010808820001', 'Pariaman', 'Cv. Ramola', 'Laki-laki', 4, '2020-03-24 13:59:47', '082385285231'),
@@ -2240,12 +2374,12 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (181, '1381570564', 'JUSMARNI', 'KTP', '0371114405670005', 'PADANG', 'CV PARADES', 'Perempuan', 4, '2020-07-13 10:48:44', '081363207161'),
 (182, '1247248132', 'NOVEL SURYADI', 'KTP', '1372021404840001', 'SOLOK', 'PT PRATAMA PUTRA SEJAHTERA', 'Laki-laki', 4, '2021-02-05 14:46:36', '082381557993'),
 (183, '1306131907880001', 'dedi yuliadi', 'KTP', '1306131907880001', 'PADANG', 'PT. SARANA MITRA SAUDARA', 'Laki-laki', 4, '2020-07-15 11:31:07', '085274747595'),
-(184, '2590347268', 'roynald fattelyku', 'KTP', '1371032808780002', 'jl. dobi 4 no.1', 'cv bola dunia', 'Laki-laki', 4, '2020-07-23 11:30:38', '08197564423'),
+(184, '2590347268', 'roynald fattelyku', 'KTP', '1371032808780002', 'jl. dobi 4 no.1', 'cv bola dunia', 'Laki-laki', 4, '2021-08-12 11:41:40', '08197564423'),
 (185, '2987803908', 'SYAHRIAL YAZID', 'KTP', '1304040503530002', 'Perum Dobok Indah Blok i6 Kec. Lima Kaum', 'SYAHRIAL YAZID', 'Laki-laki', 4, '2020-07-29 10:55:46', '085274503966'),
 (186, '771182000086', 'ADe', 'SIM', '771182000086', 'batusangkar', 'CV. LEGUMER', 'Laki-laki', 4, '2020-07-29 13:43:31', '081374123999'),
-(187, '1304093105630001', 'YURNAFIS', 'KTP', '1304093105630001', 'Jl. Bendungan Baru No 60 Sawah Tangah Pariangan', 'CV. MUTIARA UTAMA', 'Laki-laki', 4, '2020-08-05 11:00:40', '081267558801'),
+(187, '1304093105630001', 'YURNAFIS', 'KTP', '1304093105630001', 'SAWAH TANGAH SIMABUR', 'CV. MUTIARA UTAMA', 'Laki-laki', 4, '2021-09-02 13:48:03', '081364006488'),
 (188, '2049521668', 'arif rahman ', 'KTP', '1304092910860001', 'batusangkar', 'CV BUKIT MAS KENCANA', 'Laki-laki', 4, '2021-06-14 11:10:11', '081364063197'),
-(189, '1500351749', 'APRIZAL', 'KTP', '1403090704840001', 'batusangkar', 'CV AGILH ANUGRAH PRATAMA', 'Laki-laki', 4, '2020-08-26 09:35:29', '085272761099'),
+(189, '1500351749', 'APRIZAL', 'KTP', '1403090704840001', 'batusangkar', 'CV AGILH ANUGRAH PRATAMA', 'Laki-laki', 4, '2021-07-19 08:58:30', '085272761099'),
 (190, '3662754052', 'SYAFEN EFENDI', 'KTP', '1304050104810001', 'BATUSANGKAR', 'CV. ADEK ROZETRA', 'Laki-laki', 4, '2020-08-06 11:13:55', '081374880681'),
 (191, '2858841348', 'KARTINI WATI', 'KTP', '1471096807710003', 'JL. AMAL N0. 4', 'CV. KARYA MULIA ABADI', 'Perempuan', 4, '2020-08-06 13:57:50', '085274950080'),
 (192, '1381391876', 'Remendra', 'KTP', '1373040706750005', 'sawahlunto', 'cv. razaki', 'Laki-laki', 4, '2020-08-06 14:18:10', '085263818288'),
@@ -2265,7 +2399,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (206, '3930413828', 'Hasbie Assihidiqi', 'KTP', '3930413828', 'batusangkar', 'dinas PUPR', 'Laki-laki', 4, '2021-01-07 10:49:41', '081267718188'),
 (207, '1304065703790001', 'Santia Wella', 'KTP', '1304065703790001', 'Lintau Buo', 'Kantor Camat Lintau Buo', 'Perempuan', 4, '2021-01-07 14:54:38', '(0752)777233'),
 (208, '08126782382', 'handa yanda', 'Lainnya', '08126782382', 'lima kaum', 'disdibud', 'Laki-laki', 4, '2021-01-11 10:17:00', '08126782382'),
-(209, '082285498005', 'renold sata tes user', 'KTP', '1271032504850003', 'batusangkar', 'dinas PUPR', 'Laki-laki', 4, '2021-01-13 08:31:15', '085263902197'),
+(209, '082285498005', '082285498005', 'KTP', '082285498005', '082285498005', '082285498005', 'Laki-laki', 4, '2021-07-15 11:51:00', '082285498005'),
 (210, '35150077489', 'renold sata tes', 'SIM', '1271032504850003', 'batusangkar', 'dinas PUPR', 'Laki-laki', 4, '2021-01-13 08:49:54', '085263902197'),
 (211, '1116162308', 'yamce mayesa', 'KTP', '1304065703790001', 'jor. sijangek, nag. Simpuruik, kec. sungai tarab', 'KESBANGPOL', 'Perempuan', 4, '2021-01-14 10:30:03', '082246526390'),
 (212, '3515007740', 'Lutvi Tes buku tamu', 'KTP', '1271032504850003', 'batusangkar', 'dinas PUPR', 'Laki-laki', 4, '2021-01-15 08:50:42', '082285498005'),
@@ -2331,7 +2465,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (272, '0311527685', 'Anggri Yulio Pernanda', 'KTP', '1501040107930022', 'Sungai Penuh', 'STKIP PGRI Sumatera Barat', 'Laki-laki', 4, '2021-03-12 09:36:24', '0'),
 (273, '1304012609670001', 'Bernes', 'KTP', '1304012609670001', 'Kampung Manggis Padang Panjang', 'Pribadi', 'Laki-laki', 4, '2021-03-12 13:13:25', '082389228487'),
 (274, '1373031308780002', 'Irwanto taufani', 'KTP', '1373031308780002', 'Sawahlunto', 'CV.Rifani Karya', 'Laki-laki', 4, '2021-03-15 12:00:35', '085274020080'),
-(275, '1329956357', 'INDRA GUNAWAN', 'KTP', '13711114088550014', 'SARUASO BARAT', 'CV. DMJ KONSTRUKSI', 'Laki-laki', 4, '2021-06-23 12:44:40', '081374439313'),
+(275, '1329956357', 'INDRA GUNAWAN', 'KTP', '13711114088550014', 'SARUASO BARAT', 'CV. DMJ KONSTRUKSI', 'Laki-laki', 4, '2021-09-08 09:11:29', '081374439313'),
 (276, '08148910000181', 'diki. f', 'SIM', '08148910000181', 'jl. lori rt/rw 3/2 Lubuk Minturun  Kota padang', 'cv. kenzo beton', 'Laki-laki', 4, '2021-03-17 11:06:07', '081314147500'),
 (277, '0247367173', 'Refki Efendi', 'KTP', '9090916677', 'Perumahan Mutiara Pantura Tigo Balai Diateh Kec Payakumbuh Utara', 'CV REAUNI KARYA', 'Laki-laki', 4, '2021-03-17 13:41:04', '081266931118'),
 (278, '2171092412790006', 'Bambang syahputra', 'KTP', '2171092412790006', 'Jl Jendral sudirman 25', 'Kejora Net / Malalo Net', 'Laki-laki', 4, '2021-03-17 13:52:01', '082284595857'),
@@ -2351,7 +2485,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `instansi`, `jenis_kelamin`, `id_user`, `tgl_update`, `no_hp`) VALUES
 (292, '1371110308890005', 'YURIZKY FIKRI', 'KTP', '1371110308890005', 'JALAN LUBUK MINTURUN NO 20', 'CV. MULTI PERSADA', 'Laki-laki', 4, '2021-03-31 12:17:46', '085274590199'),
 (293, '2452833796', 'ANDHIKA PUTRA', 'KTP', '1371022805840006', 'Pariaman', 'CV. VIVIN AGUNG', 'Laki-laki', 4, '2021-03-31 13:58:18', '081275766707'),
-(294, '3256974340', 'Defi Asmar', 'KTP', '1371116710800011', 'Jl. Ekora Se. Bangek', 'CV. Ok Konstruksi', 'Perempuan', 4, '2021-04-05 10:46:38', '081374710060'),
+(294, '3256974340', 'Defi Asmar', 'KTP', '1371116710800011', 'Jl. Ekora Se. Bangek', 'CV. Ok Konstruksi', 'Perempuan', 4, '2021-08-27 10:16:30', '081374710060'),
 (295, '1519603716', 'jasrial', 'KTP', '13710830127600002', 'nuansa indah taruko rodi rt 03/04 limau manis selatan ', ' PT SIKOMBER', 'Laki-laki', 4, '2021-04-08 14:58:25', '081365751213'),
 (296, '3930144772', 'Rio Darwin', 'KTP', '1303043008860002', 'Sijunjung', 'CV. AKHTAR KONSTRUKSI', 'Laki-laki', 4, '2021-04-15 09:40:06', '085274544504'),
 (297, '1247501060', 'Resdi Anfo, SE', 'KTP', '1374013008830001', 'Jl. A. yani No. 106 Kel. Ngalau Padang Panjang', 'CV. Grecia', 'Laki-laki', 4, '2021-05-03 13:56:59', '08126721611'),
@@ -2381,7 +2515,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (321, '0978280964', 'deni murdani', 'KTP', '1304081010850002', 'sungai tarab', 'cv.fatiya', 'Laki-laki', 4, '2021-05-03 10:37:08', '085363787647'),
 (322, '0039847940', 'ENDI EFENDI', 'KTP', '1306142409720001', 'jln urip sumuharjo n0 19 B tinggi', 'CV SAPTA KARYA', 'Laki-laki', 4, '2021-05-03 10:40:06', '08126782244'),
 (323, '0980116996', 'ARINIE YOANITA', 'KTP', '1371044407860004', 'JL. CI;LOSARI NO. 5/55 PADANG', 'CV. PUTRA BUNGSU', 'Perempuan', 4, '2021-05-03 11:14:52', '082174335535'),
-(324, '1248491780', 'AZIZKHAN', 'KTP', '1371020510660006', 'PADANG', 'PT AJI BANGUNAN PERKASA', 'Laki-laki', 4, '2021-05-03 11:47:26', '081266566280'),
+(324, '1248491780', 'AZIZKHAN', 'KTP', '1371020510660006', 'PADANG', 'cv.sam brother', 'Laki-laki', 4, '2021-09-13 11:57:26', '081266566280'),
 (325, '0038374660', 'Novi Hendri', 'KTP', '1302102911740001', 'Jorong Malana Ponco Nagari Baringin Kec. Limo Kaum', 'CV BUKTI KARYA SANDI', 'Laki-laki', 4, '2021-05-03 12:24:22', '082387709501'),
 (326, '1245448196', 'Almarjuana Putra', 'KTP', '1302113110720001', 'Perm. Griya Ampang Kualo B/7 Kel. Nan Balimo Kota Solok', 'CV.BAGINDO KONTRAKTOR', 'Laki-laki', 4, '2021-05-03 12:27:20', '085263116730'),
 (327, '2454924804', 'pasril ', 'KTP', '1304040508610001', 'jorong dusun tuo', 'cv putri tunggal ', 'Laki-laki', 4, '2021-05-03 12:56:16', '085274078760'),
@@ -2413,7 +2547,23 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (353, '0572340484', 'JET APRIANDI', 'KTP', '1904032606840004', 'batusangkar', 'cv KARYA SULA ENGGINERING', 'Laki-laki', 4, '2021-06-21 10:17:45', '085278656966'),
 (354, '1374011607860022', 'HENDRA KURNIA', 'KTP', '1374011607860022', 'Jln H miskin rt 8 kel,ekor lubuk.', 'CV NOVALINDO PRATAMA', 'Laki-laki', 4, '2021-06-21 11:06:10', '082383335762'),
 (355, '2991099396', 'Rudi hartono', 'KTP', '1304031506720002', 'tiung jorong pincuran  nagari simawang', 'cv fajar karya abadi', 'Laki-laki', 4, '2021-06-21 11:25:27', '082387307182'),
-(356, '2048544004', 'dailami', 'KTP', '1304041904640002', 'jorong supanjang', 'cv mutiara bhotin', 'Laki-laki', 4, '2021-06-23 11:50:05', '081374303744');
+(356, '2048544004', 'dailami', 'KTP', '1304041904640002', 'jorong supanjang', 'cv mutiara bhotin', 'Laki-laki', 4, '2021-06-23 11:50:05', '081374303744'),
+(357, '1378431236', 'RINALDI', 'KTP', '1304040312700002', 'PERUMNAS DOBOK BLOK D2 NO 1 BATUSANGKAR', 'CV. PILAR UTAMA,MG', 'Laki-laki', 4, '2021-08-25 10:01:18', '082213455453'),
+(358, '082285498005082285498005', '082285498005', 'KTP', '082285498005', '082285498005', '082285498005', 'Laki-laki', 4, '2021-07-15 11:46:40', '082285498005'),
+(359, '1304081512810004', 'VICKY HAREVA', 'KTP', '1304081512810004', 'JORONG SIMPURUIK NO 143', 'CV MAJU MAPAN', 'Laki-laki', 4, '2021-07-19 12:04:57', '082284730909'),
+(360, '3797305348', 'CICILIA AGUSTINA', 'KTP', '1304095608880001', 'Koto Tuo Simabur', 'CV. SRIKANDI SAKTI', 'Perempuan', 4, '2021-07-19 13:47:14', '081364006488'),
+(361, '130408151281004', 'VICKY HAREVA', 'KTP', '130408151281004', 'JORONG SIMPURUIK NO 143', 'CV Bendang Berkah Hidayah', 'Laki-laki', 4, '2021-07-27 09:49:41', '082284730909'),
+(362, '1374020712770001', 'ROBBY FATRA', 'KTP', '1374020712770001', 'Jl Anas Karim No 199 Padang panjang', 'CV HAZELINDO', 'Laki-laki', 4, '2021-08-10 10:48:10', '082124630731'),
+(363, '1381973252', 'PRAMDHANI AZWAR', 'KTP', '1371110706830013', 'KOMP. RAHAKA GRIYA PERMAI BLOK O NO.12 PADANG', 'CV. GEMILANG PRAMINDO PERKASA', 'Laki-laki', 4, '2021-08-19 11:19:54', '081377229798'),
+(364, '1069844997', 'Rifaldi', 'KTP', '1304100605840002', 'Limo Kaum', 'CV Cipta Sinergi', 'Laki-laki', 4, '2021-08-27 14:13:32', '085263330007'),
+(365, '3593043973', 'NENNI', 'KTP', '1374026810760001', 'Jl. Rohana kudus No.57 Rt 08 Kelurahan Kampung Manggis Kec. Padang Panjang Barat Kota Padang Panjang', 'CV. GAIDEN', 'Perempuan', 4, '2021-08-27 14:34:20', '081389611276'),
+(366, '1371110206740001', 'ANJONI VILMON', 'KTP', '1371110206740001', 'JL. LINGGARJATI 02 NO 7C PARUPUAK TABING PADANG', 'CV. ALIV AGUNG', 'Laki-laki', 4, '2021-08-27 14:36:43', '081267446114'),
+(367, '1077184773', 'romi husda', 'KTP', '1304131007750002', 'kpn block d no 10 saruaso', 'cv. auliarova', 'Laki-laki', 4, '2021-08-31 10:09:31', '081374000867'),
+(368, '2722850820', 'AZHARDI', 'KTP', '1371111008540014', 'JALAN PARAK ANAU SAIYO III', 'CV. PANCARAN EMAS', 'Laki-laki', 4, '2021-09-02 10:46:22', '082172943365'),
+(369, '0303045010670007', 'DASTATI', 'KTP', '0303045010670007', 'JL. IR. H JUANDA MUARO SIJUNJUNG', 'CV. TUJUH POETRA', 'Perempuan', 4, '2021-09-06 14:09:20', '085274005655'),
+(370, '1371060101700037', 'muslim', 'KTP', '1371060101700037', 'perumahan banuaran blok ee.7 lubeg kota padang', 'CV. REGCE HORIZONT CONSULTANT', 'Laki-laki', 4, '2021-09-07 10:05:28', '085274090636'),
+(371, '1304132407010001', 'DIGO PERDANA PUTRA', 'KTP', '1304132407010001', 'Batu bulek kawai lintau buo utara', 'CV. JAYA TAMATO', 'Laki-laki', 4, '2021-09-07 14:04:12', '081276028532'),
+(372, '1371010109680003', 'welly sunyoto', 'KTP', '1371010109680003', 'komp villa sentosa blok cc/4 rt 003 rw 013 kel. mata air, kec. padang selatan', 'cv. rafflesia teknik sentosa', 'Laki-laki', 4, '2021-09-09 10:17:07', '0812363021880');
 
 -- --------------------------------------------------------
 
@@ -2547,13 +2697,13 @@ ALTER TABLE `kunci`
 -- AUTO_INCREMENT untuk tabel `log_activity`
 --
 ALTER TABLE `log_activity`
-  MODIFY `nolog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1453;
+  MODIFY `nolog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1554;
 
 --
 -- AUTO_INCREMENT untuk tabel `log_tamu`
 --
 ALTER TABLE `log_tamu`
-  MODIFY `no_log` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=686;
+  MODIFY `no_log` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=719;
 
 --
 -- AUTO_INCREMENT untuk tabel `surat_masuk`
@@ -2565,7 +2715,7 @@ ALTER TABLE `surat_masuk`
 -- AUTO_INCREMENT untuk tabel `tamu`
 --
 ALTER TABLE `tamu`
-  MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=357;
+  MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=373;
 
 --
 -- AUTO_INCREMENT untuk tabel `tenant`
