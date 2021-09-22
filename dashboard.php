@@ -149,7 +149,7 @@ $jumlahpengunjung=$datapengunjung['jml_pengunjung'];
     function now() { 
       $.ajax({
         type: "POST",
-        url: "http://localhost/apitamu/chart",
+        url: "http://192.168.172.200/apitamu/chart",
         data: {type:'year',month:'05',year:'2021'},
         dataType: "JSON",
         success: function (response) {
