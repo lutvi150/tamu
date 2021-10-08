@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Sep 2021 pada 05.02
+-- Waktu pembuatan: 08 Okt 2021 pada 06.25
 -- Versi server: 10.4.20-MariaDB
 -- Versi PHP: 7.3.29
 
@@ -1597,7 +1597,24 @@ INSERT INTO `log_activity` (`nolog`, `kode_user`, `activity`, `ip`, `tanggal`) V
 (1550, 4, 'user Melakukan Login', '192.168.172.66', '2021-09-15 15:49:05'),
 (1551, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-16 09:57:18'),
 (1552, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-21 14:56:19'),
-(1553, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-21 15:02:50');
+(1553, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-21 15:02:50'),
+(1554, 4, 'user Menerima Tamu 082285498005', '127.0.0.1', '2021-09-22 10:13:23'),
+(1555, 4, 'user Melakukan checkout tamu 082285498005', '127.0.0.1', '2021-09-22 10:13:33'),
+(1556, 1, 'user Melakukan Login', '192.168.172.22', '2021-09-22 10:58:07'),
+(1557, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-23 13:33:43'),
+(1558, 4, 'user Menerima Tamu Zulkifli Nurdin', '127.0.0.1', '2021-09-23 14:50:06'),
+(1559, 4, 'user Melakukan checkout tamu Zulkifli Nurdin', '127.0.0.1', '2021-09-23 15:01:21'),
+(1560, 4, 'user Melakukan Login', '127.0.0.1', '2021-09-24 11:10:44'),
+(1561, 4, 'user Menerima Tamu FEBRIYANTO', '127.0.0.1', '2021-09-24 11:13:42'),
+(1562, 1, 'user Melakukan Login', '192.168.172.102', '2021-10-04 08:10:39'),
+(1563, 4, 'user Melakukan Login', '127.0.0.1', '2021-10-08 11:14:42'),
+(1564, 4, 'user Menerima Tamu abra murcy ae', '127.0.0.1', '2021-10-08 11:16:07'),
+(1565, 0, 'user Logout Aplikasi', '127.0.0.1', '2021-10-08 11:17:21'),
+(1566, 4, 'user Melakukan Login', '127.0.0.1', '2021-10-08 11:17:25'),
+(1567, 1, 'user Melakukan Login', '192.168.172.10', '2021-10-08 11:17:41'),
+(1568, 1, 'User Mengedit tenant Kasubag Pengelolaan LPSE (Ridwan, SE)', '192.168.172.10', '2021-10-08 11:20:00'),
+(1569, 1, 'User Mengedit tenant Kasubag Pengelolaan PBJ (Evalina, ST)', '192.168.172.10', '2021-10-08 11:20:45'),
+(1570, 1, 'User Mengedit tenant Kasubag Pembinaan dan Advokasi PBJ (Teddy Yuliswar, S.Kom)', '192.168.172.10', '2021-10-08 11:21:54');
 
 -- --------------------------------------------------------
 
@@ -2115,7 +2132,11 @@ INSERT INTO `log_tamu` (`no_log`, `uid`, `id_tenant`, `tujuan`, `no_kartu`, `che
 (715, '1304132407010001', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-09-07 14:04:12', '2021-09-07 16:11:04', '2021-09-07 14:04:12', 4, '1630998252.jpg'),
 (716, '1329956357', 12, 'PEMBUKTIAN KUALIFIKASI', '', '2021-09-08 09:11:29', '2021-09-08 14:25:32', '2021-09-08 09:11:29', 4, '1631067089.jpg'),
 (717, '1371010109680003', 12, 'pembuktian kualifikasi', '', '2021-09-09 10:17:07', '2021-09-09 14:23:39', '2021-09-09 10:17:07', 4, '1631157427.jpg'),
-(718, '1248491780', 12, 'pembuktian klafikasi', '', '2021-09-13 11:57:26', '2021-09-13 18:52:14', '2021-09-13 11:57:26', 4, '1631509046.jpg');
+(718, '1248491780', 12, 'pembuktian klafikasi', '', '2021-09-13 11:57:26', '2021-09-13 18:52:14', '2021-09-13 11:57:26', 4, '1631509046.jpg'),
+(719, '082285498005', 3, '082285498005', '', '2021-09-22 10:13:23', '2021-09-22 10:13:33', '2021-09-22 10:13:23', 4, '1632280403.jpg'),
+(720, '1647982596', 12, 'Verivikasi', '', '2021-09-23 14:50:06', '2021-09-23 15:01:21', '2021-09-23 14:50:06', 4, '1632383406.jpg'),
+(721, '1249525508', 11, 'BUAT ACCOUNT BARU', '', '2021-09-24 11:13:42', '0000-00-00 00:00:00', '2021-09-24 11:13:42', 4, '1632456821.jpg'),
+(722, '0710902276', 10, 'pengganti nama cv', '', '2021-10-08 11:16:07', '0000-00-00 00:00:00', '2021-10-08 11:16:07', 4, '1633666567.jpg');
 
 -- --------------------------------------------------------
 
@@ -2299,7 +2320,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (106, '1371113005710004', 'yunaldi yasri', 'KTP', '1371113005710004', 'pasir putih no f 3', 'Dinas Pekerjaan Umum, Penataan Ruang dan Pertanahan', 'Laki-laki', 4, '2020-02-26 14:25:32', '081363315744'),
 (107, '3800265220', 'INDRA GUNAWAN', 'KTP', '1371111408850014', 'Batusangkar', 'CV. DMJ KONSTRUKSI', 'Laki-laki', 4, '2020-08-26 14:12:09', '081374439313'),
 (108, '1787720964', 'HADEWINANDA SYARDI', 'KTP', '1371092406880001', 'KOMP. MAWAR PUTIH BLOK L NO 23, KURANJI PADANG', 'CV. HD JAYA', 'Laki-laki', 4, '2020-02-26 15:18:25', '081365699847'),
-(109, '0710902276', 'abra murcy ae', 'KTP', '1304052509860003', 'jorong aua serumpun', 'CV. LINTAS RODA BIRU', 'Laki-laki', 4, '2021-05-24 11:14:08', '081378762537'),
+(109, '0710902276', 'abra murcy ae', 'KTP', '1304052509860003', 'jorong aua serumpun', 'CV. LINTAS RODA BIRU', 'Laki-laki', 4, '2021-10-08 11:16:07', '081378762537'),
 (110, '2727565828', 'YONI FENTRI', 'KTP', '1304052112700001', 'Jorong Sungai Salak Nag. Koto Tangah Kec. Tanjung Emas', 'CV. BATANG BUO', 'Laki-laki', 4, '2021-08-04 10:24:32', '081266643444'),
 (111, '2858839044', 'irwan', 'KTP', '1471092610720002', 'pekanbaru', 'cv. duta multi artha', 'Laki-laki', 4, '2020-08-06 14:01:21', '082388955710'),
 (112, '2048225028', 'Ayu Kurnia Suzana', 'KTP', '1376027003830001', 'Koto Panjang Padang Kec. Lamposi Tigo Nagori Kota Payakumbuh', 'cv. duta cipta persada', 'Perempuan', 4, '2020-02-27 14:08:13', '082284772992'),
@@ -2399,7 +2420,7 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (206, '3930413828', 'Hasbie Assihidiqi', 'KTP', '3930413828', 'batusangkar', 'dinas PUPR', 'Laki-laki', 4, '2021-01-07 10:49:41', '081267718188'),
 (207, '1304065703790001', 'Santia Wella', 'KTP', '1304065703790001', 'Lintau Buo', 'Kantor Camat Lintau Buo', 'Perempuan', 4, '2021-01-07 14:54:38', '(0752)777233'),
 (208, '08126782382', 'handa yanda', 'Lainnya', '08126782382', 'lima kaum', 'disdibud', 'Laki-laki', 4, '2021-01-11 10:17:00', '08126782382'),
-(209, '082285498005', '082285498005', 'KTP', '082285498005', '082285498005', '082285498005', 'Laki-laki', 4, '2021-07-15 11:51:00', '082285498005'),
+(209, '082285498005', '082285498005', 'KTP', '082285498005', '082285498005', '082285498005', 'Laki-laki', 4, '2021-09-22 10:13:23', '082285498005'),
 (210, '35150077489', 'renold sata tes', 'SIM', '1271032504850003', 'batusangkar', 'dinas PUPR', 'Laki-laki', 4, '2021-01-13 08:49:54', '085263902197'),
 (211, '1116162308', 'yamce mayesa', 'KTP', '1304065703790001', 'jor. sijangek, nag. Simpuruik, kec. sungai tarab', 'KESBANGPOL', 'Perempuan', 4, '2021-01-14 10:30:03', '082246526390'),
 (212, '3515007740', 'Lutvi Tes buku tamu', 'KTP', '1271032504850003', 'batusangkar', 'dinas PUPR', 'Laki-laki', 4, '2021-01-15 08:50:42', '082285498005'),
@@ -2563,7 +2584,9 @@ INSERT INTO `tamu` (`id_tamu`, `uid`, `nama`, `jenis_id`, `nik`, `alamat`, `inst
 (369, '0303045010670007', 'DASTATI', 'KTP', '0303045010670007', 'JL. IR. H JUANDA MUARO SIJUNJUNG', 'CV. TUJUH POETRA', 'Perempuan', 4, '2021-09-06 14:09:20', '085274005655'),
 (370, '1371060101700037', 'muslim', 'KTP', '1371060101700037', 'perumahan banuaran blok ee.7 lubeg kota padang', 'CV. REGCE HORIZONT CONSULTANT', 'Laki-laki', 4, '2021-09-07 10:05:28', '085274090636'),
 (371, '1304132407010001', 'DIGO PERDANA PUTRA', 'KTP', '1304132407010001', 'Batu bulek kawai lintau buo utara', 'CV. JAYA TAMATO', 'Laki-laki', 4, '2021-09-07 14:04:12', '081276028532'),
-(372, '1371010109680003', 'welly sunyoto', 'KTP', '1371010109680003', 'komp villa sentosa blok cc/4 rt 003 rw 013 kel. mata air, kec. padang selatan', 'cv. rafflesia teknik sentosa', 'Laki-laki', 4, '2021-09-09 10:17:07', '0812363021880');
+(372, '1371010109680003', 'welly sunyoto', 'KTP', '1371010109680003', 'komp villa sentosa blok cc/4 rt 003 rw 013 kel. mata air, kec. padang selatan', 'cv. rafflesia teknik sentosa', 'Laki-laki', 4, '2021-09-09 10:17:07', '0812363021880'),
+(373, '1647982596', 'Zulkifli Nurdin', 'KTP', '1371012903710001', 'Jln Seberang Padang Selatan III No.7 Padang', 'CV. ANDALAS SAIYO SAKATO', 'Laki-laki', 4, '2021-09-23 14:50:06', '081374399998'),
+(374, '1249525508', 'FEBRIYANTO', 'KTP', '1304081002910002', 'kOMPLEK PERUMNAS PADANG RENO BLOK F 29', '-', 'Laki-laki', 4, '2021-09-24 11:13:42', '085274564511');
 
 -- --------------------------------------------------------
 
@@ -2584,9 +2607,9 @@ CREATE TABLE `tenant` (
 
 INSERT INTO `tenant` (`id_tenant`, `nama_tenant`, `telepon_tenant`, `lantai_tenant`) VALUES
 (1, 'Kabag Pengadaan Barang dan Jasa ( Veri Winora, ST)', '0', '1'),
-(2, 'Kasubag Pengelolaan LPSE (Edy Martasena, ST)', '082286118289', '1'),
-(3, 'Kasubag Pembinaan dan Advokasi PBJ ', '0', '1'),
-(4, 'Kasubag Pengelolaan PBJ (Dewi Bakhtiar, SKM)', '0', '1'),
+(2, 'Kasubag Pengelolaan LPSE (Ridwan, SE)', '081363930313', '1'),
+(3, 'Kasubag Pembinaan dan Advokasi PBJ (Teddy Yuliswar, S.Kom)', '0', '1'),
+(4, 'Kasubag Pengelolaan PBJ (Evalina, ST)', '08126772743', '1'),
 (5, 'Pengelola Pengadaan Barang dan Jasa (Aulia Hakim, S.Pt)', '0', '1'),
 (6, 'Penelaah Kebijakan Pengadaan Barang dan Jasa (Rini Deswita)', '0', '1'),
 (7, 'Pengadministrasian Umum (Mahdonal)', '0', '1'),
@@ -2697,13 +2720,13 @@ ALTER TABLE `kunci`
 -- AUTO_INCREMENT untuk tabel `log_activity`
 --
 ALTER TABLE `log_activity`
-  MODIFY `nolog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1554;
+  MODIFY `nolog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1571;
 
 --
 -- AUTO_INCREMENT untuk tabel `log_tamu`
 --
 ALTER TABLE `log_tamu`
-  MODIFY `no_log` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=719;
+  MODIFY `no_log` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=723;
 
 --
 -- AUTO_INCREMENT untuk tabel `surat_masuk`
@@ -2715,7 +2738,7 @@ ALTER TABLE `surat_masuk`
 -- AUTO_INCREMENT untuk tabel `tamu`
 --
 ALTER TABLE `tamu`
-  MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=373;
+  MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=375;
 
 --
 -- AUTO_INCREMENT untuk tabel `tenant`
