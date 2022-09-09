@@ -85,7 +85,8 @@ function getBulan($bln){
 							<th>Nama Lengkap</th>
 							<th>Instansi</th>
 							<th>Jenis Kelamin</th>
-                            <th>Nomor HP</th>				
+                            <th>Nomor HP (Whatsapp)</th>
+                            <th>Email</th>				
 							<th>Aksi</th>
    
 						</tr>
@@ -117,6 +118,7 @@ function getBulan($bln){
 							<td><?php echo $datatamu['instansi'] ?></td>
 							<td><?php echo $datatamu['jenis_kelamin'] ?></td>
                             <td><?php echo $datatamu['no_hp']?></td>
+                            <td><?php echo $datatamu['email']?></td>
 							<td><a href="#" class="edit-record-etamu" data-idtamu="<?php echo $datatamu['uid'] ?>"><button type="button" class="btn btn-danger pull-left btn-xs"><i class="fa fa-info"></i>&nbsp;Lihat Log</button></a></td>
 						</tr>
 						 <?php

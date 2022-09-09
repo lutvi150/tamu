@@ -183,7 +183,7 @@ $tahun=date("Y");
       <div class="pull-right hidden-xs">
         <b>Version</b> 1.0
       </div>
-      <strong>Copyright &copy; 2020 <a href="https://adminlte.io">Bagian PBJ Setda Kab. Tanah Datar</a>.</strong> All
+      <strong>Copyright &copy; 2022 <a href="https://adminlte.io">Bagian PBJ Setda Kab. Tanah Datar</a>.</strong> All
       rights
       reserved.
     </footer>

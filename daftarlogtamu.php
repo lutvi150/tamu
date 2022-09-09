@@ -85,7 +85,8 @@ function getBulan($bln){
 							<th>Instansi</th>
 							<th>Tujuan</th>
 							<th>Keperluan</th>
-							<th>Nomor Handphone</th>
+							<th>Nomor Handphone (Whatsapp)</th>
+                            <th>Email</th>
 							<th>Check In</th>
 							<th>Check Out</th>							
 							<th>Aksi</th>
@@ -97,7 +98,7 @@ function getBulan($bln){
 						include "koneksi.php";
 						$no=1;
 						
-						$sqllogtamu=mysqli_query($koneksi,"SELECT lt.no_log,lt.uid, tm.nik, tm.nama, tm.instansi, lt.tujuan, tn.nama_tenant, lt.no_kartu, lt.check_in, lt.check_out FROM log_tamu AS lt LEFT JOIN tamu AS tm ON lt.uid=tm.uid LEFT JOIN tenant AS tn ON tn.id_tenant=lt.id_tenant LEFT JOIN user AS us ON us.kode_user=lt.id_user order by lt.check_in desc");
+						$sqllogtamu=mysqli_query($koneksi,"SELECT lt.no_log,lt.uid, tm.nik, tm.nama,tm.no_hp, tm.instansi, lt.tujuan, tn.nama_tenant, lt.no_kartu, lt.check_in, lt.check_out FROM log_tamu AS lt LEFT JOIN tamu AS tm ON lt.uid=tm.uid LEFT JOIN tenant AS tn ON tn.id_tenant=lt.id_tenant LEFT JOIN user AS us ON us.kode_user=lt.id_user order by lt.check_in desc");
 						
 						while($datalog=mysqli_fetch_array($sqllogtamu))
 						{		
@@ -114,7 +115,8 @@ function getBulan($bln){
 							<td><?php echo $datalog['instansi'] ?></td>
 							<td><?php echo $datalog['nama_tenant'] ?></td>
 							<td><?php echo $datalog['tujuan'] ?></td>
-							<td><?php echo $datalog['no_kartu'] ?></td>
+							<td><?php echo $datalog['no_hp'] ?></td>
+                            <td><?php echo $datalog['email'] ?></td>
 							<td><?php echo $datalog['check_in'] ?></td>
 							
 							<?php

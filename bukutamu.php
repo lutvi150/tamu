@@ -124,11 +124,19 @@ $datatamu=mysqli_fetch_array($sql);
               </div>
             </div>
             <div class="form-group">
-              <label for="inputEmail3" class="col-sm-2 control-label">Nomor Handphone</label>
+              <label for="inputEmail3" class="col-sm-2 control-label">Nomor Handphone (Whatsapp)</label>
 
               <div class="col-sm-10">
                 <input type="text" class="form-control" name="no_hp" id="inputEmail3"
                   value="<?php echo $datatamu['no_hp'] ?>" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+
+              <div class="col-sm-10">
+                <input type="email" class="form-control" name="email" id="inputEmail3"
+                  value="<?php echo $datatamu['email'] ?>" required>
               </div>
             </div>
             <div class="form-group">
