@@ -100,10 +100,10 @@ $jumlahpengunjung=$datapengunjung['jml_pengunjung'];
   <!-- /.row -->
   <br><br>
   <center>
-    <h2>Selamat Datang di Sistem Informasi Pengunjung</h2>
+    <h2>Selamat Datang di Buku Tamu</h2>
   </center>
   <center>
-    <h2>Bagian Pengadaan Barang dan Jasa Sekretariat Daerah Kab. Tanah Datar</h2>
+    <h2>Kejaksaan Negeri Aceh Tengah</h2>
   </center>
   <center>
     <h4>Siapkan E-KTP anda</h4>

@@ -16,13 +16,13 @@ $online=mysqli_query($koneksi,"update user set login='1' where kode_user='$iduse
 if ($ketemu > 0){
   session_start();
 
-  $_SESSION[useradmin]  = $r[username];
-  $_SESSION[iduser]     = $r[kode_user];
+  $_SESSION['useradmin']  = $r['username'];
+  $_SESSION['iduser']     = $r['kode_user'];
   
-  $_SESSION[hakakses]   = $r[hakakses];
+  $_SESSION['hakakses']   = $r['hakakses'];
   
-  $_SESSION[nama]     	= $r[nama];
-  $_SESSION[jenisuser]	=$r[jenis_user];
+  $_SESSION['nama']     	= $r['nama'];
+  $_SESSION['jenisuser']	=$r['jenis_user'];
  
   //log activity
   include "koneksi.php";
