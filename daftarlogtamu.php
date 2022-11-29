@@ -118,7 +118,7 @@ function getBulan($bln){
 							<td><?php echo $datalog['check_in'] ?></td>
 							
 							<?php
-							if ($cekout=="0000-00-00 00:00:00")
+							if ($cekout==null)
 							{
 							?>
 							

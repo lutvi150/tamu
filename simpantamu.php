@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 $time=time();
 copy('saved_images/foto.jpg', 'gambar/'.$time.'.jpg');
 unlink('saved_images/foto.jpg');
@@ -11,7 +14,8 @@ $uid=$_POST['uid'];
 $kelamin=$_POST['kelamin'];
 $idtenant=$_POST['idtenant'];
 $tujuan=$_POST['tujuan'];
-$nokartu=$_POST['nokartu'];
+// $nokartu=$_POST['nokartu'];
+$nokartu=$uid;
 date_default_timezone_set('Asia/Jakarta');
 $today=date("Y-m-d H:i:s");
 $foto=$time.'.jpg';
@@ -35,8 +39,10 @@ else
 	$update="UPDATE tamu set nama = '$nama', jenis_id='$jenisidentitas', nik = '$identitas', alamat = '$alamat', instansi = '$instansi', jenis_kelamin = '$kelamin', id_user='$iduser', tgl_update='$today',no_hp='$no_hp' WHERE uid = '$uid'";
 }
 include "koneksi.php";
-mysqli_query($koneksi,"INSERT INTO log_tamu ( no_log, uid, id_tenant, tujuan, no_kartu, check_in, check_out, tgl_update, id_user, foto ) VALUES ( null, '$uid', '$idtenant', '$tujuan', '$nokartu', '$today', '', '$today','$iduser','$foto' )");
-$log ="INSERT INTO log_tamu ( no_log, uid, id_tenant, tujuan, no_kartu, check_in, check_out, tgl_update, id_user, foto ) VALUES ( null, '$uid', '$idtenant', '$tujuan', '$nokartu', '$today', '', '$today','$iduser','$foto' )";
+if (!$koneksi -> query("INSERT INTO log_tamu ( no_log, uid, id_tenant, tujuan, no_kartu, check_in, check_out, tgl_update, id_user, foto ) VALUES ( null, '$uid', '$idtenant', '$tujuan', '$nokartu', '$today', '', '$today','$iduser','$foto' )")) {
+	echo("Error description: " . $koneksi -> error);
+  }
+// $log ="INSERT INTO log_tamu ( no_log, uid, id_tenant, tujuan, no_kartu, check_in, check_out, tgl_update, id_user, foto ) VALUES ( null, '$uid', '$idtenant', '$tujuan', '$nokartu', '$today', '', '$today','$iduser','$foto' )";
 
 
 $ip=$_SERVER['REMOTE_ADDR'];
